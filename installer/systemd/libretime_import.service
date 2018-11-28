@@ -1,0 +1,11 @@
+[Unit]
+Description=LibreTime Media Analyzer Service
+
+[Service]
+ExecStart=/usr/bin/libretime_import
+User=www-data
+Group=www-data
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
